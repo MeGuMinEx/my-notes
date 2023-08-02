@@ -48,7 +48,7 @@ ssh 默认用户名和密码：`pi@raspberry`
 
 [Raspberry Pi OS – Raspberry Pi](https://www.raspberrypi.com/software/)
 
-下载好后用官方的工具刷入 SD 卡即可。这个工具甚至还能自动配置 ssh 公钥登录（看上去是从 `~/.ssh/id_rsa.pub` 提取的）和与 PC 相同的 WIFI 配置（它用什么黑科技看到的密码……），我最后选择用 ssh 公钥登录、网线连接。
+下载好后用官方的工具刷入 SD 卡即可。这个工具甚至还能自动配置 ssh 公钥登录（看上去是从 `~/.ssh/id_rsa.pub` 提取的）和与 PC 相同的 WIFI 配置（它用什么黑科技看到的密码……）[在Windows中，WiFi的SSID和密码是明文存储的。想要查看可以通过打开WIFI网卡的属性点击无线属性，在UAC提权后即可看到密码。]，我最后选择用 ssh 公钥登录、网线连接。
 
 登录用户名默认是 `pi` ，可以用 `sudo su` 访问 root （无需密码，可能因为我没设置？）。
 
